@@ -1,0 +1,29 @@
+@import "components.css";
+@import "app.css";
+@import "tippy.css";
+
+/* Remove the next import if you do not use coding snippets */
+@import "github-dark.css";
+
+@tailwind base;
+
+/* Start purging... */
+@tailwind utilities;
+/* Stop purging. */
+
+html {
+    text-rendering: geometricPrecision;
+    -webkit-font-smoothing: subpixel-antialiased;
+}
+
+body {
+    @apply bg-white text-gray-800 dark:bg-black-500 dark:text-gray-300 font-sans;
+}
+
+/*
+We hide the emulator warning at the bottom of the page.
+Please remove the following class if you want to display it
+ */
+.firebase-emulator-warning {
+    display: none;
+}
